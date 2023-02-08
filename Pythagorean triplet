@@ -1,0 +1,25 @@
+#include<stdio.h>
+#include<math.h>
+main()
+{
+ int s1,s2,hyp,ptriple=0;
+
+ printf(" Side1 ---- side2 ---- hypotenusn");
+ for(s1=0;s1<=100;s1++)
+ {
+  for(s2=0;s2<=100;s2++)
+  {
+   for(hyp=1;hyp<=100;hyp++)
+   {
+   ptriple=(s1*s1)+(s2*s2);
+   hyp=hyp*hyp;
+   if(hyp==ptriple)
+   {
+   hyp=sqrt(hyp);
+   printf("n%d ---- %d ---- %d ",s1,s2,hyp);
+   }
+   }
+  }
+ }
+
+}
